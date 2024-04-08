@@ -1,0 +1,20 @@
+[package]
+name = "wilson"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/vi/wilson"
+license = "MIT OR Apache-2.0"
+description = "Calculate Wilson confidence interval for binomial distribution using the formula from Wikipedia"
+categories = ["mathematics", "science"]
+keywords = ["statistics", "probability", "interval", "confidence"]
+
+
+[dependencies]
+
+[features]
+default=["f64"]
+f32=[]
+f64=[]
+
+[dev-dependencies]
+approx = "0.5.1"
