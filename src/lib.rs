@@ -13,6 +13,7 @@ pub type FP = f32;
 /// Result of the [`wilson`] calculation.
 /// 
 /// Next "trial" is expected to be "success" with probability from `low` to `high` with a confidence that depend on `z` parameter.
+#[derive(Debug,PartialEq, PartialOrd)]
 pub struct WilsonResult {
     /// Lower bound of a Wilson confidence interval
     pub low: FP,
